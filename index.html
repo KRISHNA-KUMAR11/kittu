@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="link1.css">
+</head>
+
+<body>
+    <h1> personal details</h1>
+    <form>
+        <div id="lable">
+            <label for="first Name">  </label>
+        </div>
+        <div id="input">
+            <input type="text" id="first Name" name="" placeholder="Enter your Name" required>
+        </div>
+        <div id="lable">
+            <label for="Gender">Gender</label>
+        </div>
+        <div id="input">
+            <input type="Radio" Name="Gender" Value="Male">Male<br>
+            <input type="Radio" Name="Gender" Value="Female">Female
+        </div>
+        <div id="lable">
+            <label for="mobileNumber">Mobile number</label>
+        </div>
+        <div id="input">
+            <input type="tel" id="mobileNumber " name="Mobile Number " placeholder="Enter your Mobile number" pattern="^[7-9][0-9]{9}$" maxLength="10" minLength="10" title="Enter 10 digit mobile number starts with 7,8 or 9" required>
+        </div>
+        <div id="lable">
+            <label for="email">Email ID</label>
+        </div>
+        <div id="input">
+            <input type="email" id="email" name="email" placeholder="Enter your Email Id" required>
+        </div>
+        <div id="lable">
+            <label for="address">Address</label>
+        </div>
+        <div id="input">
+            <textarea id="address" name="address" rows="5" cols="25" placeholder="Enter your address" required></textarea>
+        </div>
+
+        <div id="lable">
+            <label for="Job loction">loction</label>
+        </div>
+        <div id="input">
+            <select name="Job loction" id="" required> 
+                                
+                <option value="select">Select..</option> 
+                <option value="bangalor">bangalor</option> 
+                <option value="chennai">chennai</option> 
+                <option value="pune">pune</option> 
+            </select>
+
+            <div id="lable">
+                <label for="dateForAppointment">Date for Appointment</label>
+            </div>
+            <div id="input">
+                <input type="date" id="dateForAppointment" name="dateforAppointment" required>
+            </div>
+            <div id="lable">
+                <label for="yearlyMaintenance">Yearly maintenance</label>
+            </div>
+            <div id="lable">
+                <label for="duration "> Duration in month from the previous service </label>
+            </div>
+            <div id="input">
+                <input type="range" id="duration" name="duration" value="0" min="0" max="6" step="1" title="0 to 6 Months" onchange="showRangevalue(this.value)">
+                <div id="show-range-value">0 Months</div>
+            </div>
+            <div class="clear"></div>
+            <div id="input">
+                <input class="Action" type="submit" value="Submit">
+                <input class="Action" type="reset" value="Clear">
+            </div>
+            <div id="clear"></div>
+    </form>
+    <div id="result"></div>
+</body>
+
+</html>
